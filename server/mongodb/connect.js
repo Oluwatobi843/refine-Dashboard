@@ -8,4 +8,4 @@ const connectDB = (url) => {
         .catch((error) => console.log(error))
 }
 
-export default connectDB; 
+export default connectDB;   

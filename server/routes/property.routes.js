@@ -2,7 +2,7 @@ import express from 'express';
 
 import {
   createProperty, deleteProperty, getAllProperties, getPropertyDetail, updateProperty,
-} from '../controller/property.controller.js';
+} from '../controllers/property.controller.js';
 
 const router = express.Router();
 
@@ -25,5 +25,5 @@ router
 router
   .route('/:id')
   .delete(deleteProperty);
-
-export default router;
+  
+export default router;       

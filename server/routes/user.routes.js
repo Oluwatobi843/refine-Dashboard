@@ -2,7 +2,7 @@ import express from 'express';
 
 import {
   createUser, getAllUsers, getUserInfoByID,
-} from '../controller/user.controller.js';
+} from '../controllers/user.controller.js';
 
 const router = express.Router();
 
@@ -17,5 +17,5 @@ router
 router
   .route('/:id')
   .get(getUserInfoByID);
-
+ 
 export default router;
